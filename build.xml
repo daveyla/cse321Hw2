@@ -54,7 +54,7 @@
     </target>
     <target name="CalcTests">
         <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
+        <junit haltOnFailure="yes" haltOnError="yes" fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="CalcTests" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
