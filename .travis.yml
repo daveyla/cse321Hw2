@@ -3,4 +3,3 @@ jdk:
   - oraclejdk8
 
 script: ant build
-after-success: ant CalcTests
